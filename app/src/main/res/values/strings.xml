@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Synapflow</string>
+    <string name="home_menu">Home</string>
+    <string name="settings">Settings</string>
+
+    <!-- Calendar Fragment Strings-->
+    <string name="activity_title_view">Calendar View Sample</string>
+    <string name="calendar_title">Calendar | SynapFlow</string>
+    <string name="calendar_subtitle">Event style implementation, day labels as header view, single selection, month scroll listener. Similar to what is in the Google Calendar app.</string>
+    <string name="calendar_dialog_delete_confirmation">Delete this event?</string>
+    <string name="calender_dialog_complete_task_confirmation">Complete this task?</string>
+    <string name="delete">Delete</string>
+    <string name="complete">Complete</string>
+    <string name="save">Save</string>
+    <string name="close">Close</string>
+    <string name="calendar_input_dialog_title">Enter event title</string>
+    <string name="calendar_empty_input_text">Text is empty</string>
+
+    <!-- Rewards Fragment Strings-->
+    <string name="rewardsTitle">Rewards</string>
+    <string name="earnedRewardsTitle">Earned Rewards</string>
+    <string name="toEarnRewardsTitle">Rewards To Earn</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="taskCategoryOptions">
+        <item>School</item>
+        <item>Work</item>
+        <item>Personal</item>
+    </string-array>
+
+
+</resources>

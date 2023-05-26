@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "333016502251",
+    "project_id": "cs481finalproject-c523b",
+    "storage_bucket": "cs481finalproject-c523b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333016502251:android:d5ba00e23f5cbeeae4d3ae",
+        "android_client_info": {
+          "package_name": "com.hfad.synapflow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333016502251-ck9umg8f6h1euhp5q2g57t6tv40chk97.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hfad.synapflow",
+            "certificate_hash": "6dff8469f67b62e6482634af2979fdbbf1ff50ba"
+          }
+        },
+        {
+          "client_id": "333016502251-lml7av23goontra8iikrqd0r1c620vhl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClHMQpHNBidMKyxq9qNEQHFmgv5SfPaZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333016502251-llrb5r3b7d9ljmq31mg0jbsqvoe1k87v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

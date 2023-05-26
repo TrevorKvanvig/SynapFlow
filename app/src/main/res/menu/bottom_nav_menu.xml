@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/nav_home" />
+    <item
+        android:id="@+id/nav_analytics"
+        android:title="Analytics"
+        android:icon="@drawable/nav_chart" />
+    <item
+        android:id="@+id/nav_add_task"
+        android:title="ItemPlaceholder" />
+    <item
+        android:id="@+id/nav_rewards"
+        android:title="Rewards"
+        android:icon="@drawable/nav_rewards" />
+    <item
+        android:id="@+id/nav_calendar"
+        android:title="Calendar"
+        android:icon="@drawable/nav_calendar" />
+</menu>
