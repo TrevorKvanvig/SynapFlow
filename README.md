@@ -33,27 +33,65 @@ Simple: There isn’t a lot of interface to bog down the application, so that wa
 Useful: The app makes studying enjoyable and motivates users to be consistent with the rewards system in place as well as review their progress through the analytics graphics. Provides users a timer that is designed to operate based on the most effective studying technique known (Pomodoro) to provide a structured study session. Task creation is simple to use and is automatically stored and organized through the calendar making it easy to manage tasks and deadlines effectively. 
 
 
-**List of Implemented Concept**
+**List of Implemented Concept**<br />
+<img width="419" alt="Screenshot 2024-06-04 at 6 02 07 PM" src="https://github.com/TrevorKvanvig/SynapFlow/assets/102114876/dd9b9223-1c74-47fc-a9f8-54af4e425bd1">
+
+
 
 1.Navigation 
-The navigation bar exists inside our home activity, where it also displays the current fragment. The bar allows you to access the home timer, the analytics page, task create page, trophies, and the calendar. 
+The navigation bar exists inside our home activity, where it also displays the current fragment. The bar allows you to access the home timer, the analytics page, task create page, trophies, and the calendar. </br>
+<img width="415" alt="Screenshot 2024-06-04 at 6 04 33 PM" src="https://github.com/TrevorKvanvig/SynapFlow/assets/102114876/15345239-a9ca-40e2-8917-05c7d3025bf1"></br>
+</br>
+<img width="422" alt="Screenshot 2024-06-04 at 6 06 15 PM" src="https://github.com/TrevorKvanvig/SynapFlow/assets/102114876/0d1a5d35-85cf-47a0-9ec7-99f0e5a93d12">
 
+</br>
+</br>
+
+<img width="532" alt="Screenshot 2024-06-04 at 6 10 34 PM" src="https://github.com/TrevorKvanvig/SynapFlow/assets/102114876/9f943ac3-ed96-4088-a7c0-79f1fe331e0e">
+
+</br>
+</br>
+<img width="532" alt="Screenshot 2024-06-04 at 6 11 02 PM" src="https://github.com/TrevorKvanvig/SynapFlow/assets/102114876/8fe3684b-8ba5-417d-8d9c-88cd762c6812">
+
+</br>
 2.Fragments 
+</br>
+<img width="542" alt="Screenshot 2024-06-04 at 6 16 31 PM" src="https://github.com/TrevorKvanvig/SynapFlow/assets/102114876/80d9ab85-0fee-42f0-84ca-c56ebd58548a">
+</br>
 Near the entirety of our application is ran inside of fragments. The only page that is not, is the main login page. We utilized Fragments for the timer, analytics, task, trophy, and calendar pages. Both plots as well are fragments inside of the analytics fragment.
 
 3.Firebase
+</br>
+<img width="703" alt="Screenshot 2024-06-04 at 6 11 53 PM" src="https://github.com/TrevorKvanvig/SynapFlow/assets/102114876/121ca31a-1937-410a-ac0b-d8f1449574fa">
+
+</br>
 Firebase was the core of our project's information. The first portion we implemented was the Google Authentication for the users to login with. This decision was so that we could easily deal with accounts and login systems and not have to worry about passwords and lost accounts. We then used the token UID generated as the users ID for the firestore database.
 
 In Firestore we created a database, using the UID as keys for each user, we then saved some general information, like a count of how many completed study sessions the user has completed, a long with a map of dates, with a string of the time they completed a task, so that this information could be later accessed. We didn’t fully utilize the times finished, we could have instead used a map with an int counter, but this was a part of something we attempted with the analytics.  
 	 
 4.API 
+</br>
+<img width="272" alt="Screenshot 2024-06-04 at 6 14 04 PM" src="https://github.com/TrevorKvanvig/SynapFlow/assets/102114876/25cada82-603a-441d-96af-13d939de48ae">
+</br>
 AndroidChart API: We discovered Android chart as an alternative to AndroidPlot. The formatting, code setup, and design was significantly cleaner and we decided we wanted the format of AndroidChart for our design.
 
 Material Progress Bar: The progress bar ‘wheel’ was something we found while researching how to do the timer, via the walkthrough I began with. The wheel for the timer counts down/gradually depletes as the time counts down and ultimately disappears on completion. Functional visual element that provides users a quick and easy way to monitor the time remaining during a study session.
+</br>
+<img width="552" alt="Screenshot 2024-06-04 at 6 15 08 PM" src="https://github.com/TrevorKvanvig/SynapFlow/assets/102114876/c2becccd-d9cf-45f9-8123-e7859e8f96b3">
+</br>
 
 Calendar API: The calendar API was a github repository we found that allowed us to integrate date information to display for the user. It also was very simple for us to add tasks to it due to it being simple enough to take in a date as a key, so that we could display the information in the recycler view.
+</br>
+<img width="481" alt="Screenshot 2024-06-04 at 6 18 16 PM" src="https://github.com/TrevorKvanvig/SynapFlow/assets/102114876/6908b0bf-c76f-49c1-90e4-f84ad8552632">
+</br>
 	
  5. Notification
+</br>
+<img width="343" alt="Screenshot 2024-06-04 at 6 13 19 PM" src="https://github.com/TrevorKvanvig/SynapFlow/assets/102114876/1a6b0bba-93a4-48cb-8468-88c1a51ccfea">
+</br>
+</br>
+<img width="456" alt="Screenshot 2024-06-04 at 6 17 37 PM" src="https://github.com/TrevorKvanvig/SynapFlow/assets/102114876/19f360c5-4621-4307-b9db-3824a8397981">
+</br>
 AddTaskFragment: After a task is created in the add task fragment we create a pending intent to the NotificationBroadcastReciever (see below) with the task details. We then used the Android Alarm Manager class to set an alarm at the date and time set in the fragment in the OS to trigger that broadcast to the NotificationBroadcastReciever.
 
 NotificationBroadcastReciever: When this class receives a broadcast from the OS it builds a new notification with our channel and task details. Once that is done it will then send the notification to the user that they have a task to complete.
