@@ -8,6 +8,10 @@ simple productivity timer and event planner app. To study via the Pomodoro Techn
 	SynapFlow is an app that is built to be a simple way of keeping track of events like exams, graduation, or scheduling time to sit down and study a certain subject. Giving you an interactive calendar to view your tasks to make sure you can plan ahead. The app is meant to help you stay productive and on top of your schedule, while also giving you a tool to help you sit down and study for a period of time, while giving you breaks. 
 The app also rewards you with trophies to help feed a sense of accomplishment for each completed study session. The app also gives you the capability of viewing some analytics for your last week and last month's amount of study sessions, in the form of a line chart for the last week, and a bar chart for the last month, binning each group as a week in the last four. 
 
+<br />
+<img width="419" alt="Screenshot 2024-06-04 at 6 02 07 PM" src="https://github.com/TrevorKvanvig/SynapFlow/assets/102114876/dd9b9223-1c74-47fc-a9f8-54af4e425bd1">
+
+
 **Description of App** 
 
 SynapFlow is a time management app that allows you to track your study times and keep track of important events like exams, birthdays, or meetings. Features include: 
@@ -33,9 +37,7 @@ Simple: There isn’t a lot of interface to bog down the application, so that wa
 Useful: The app makes studying enjoyable and motivates users to be consistent with the rewards system in place as well as review their progress through the analytics graphics. Provides users a timer that is designed to operate based on the most effective studying technique known (Pomodoro) to provide a structured study session. Task creation is simple to use and is automatically stored and organized through the calendar making it easy to manage tasks and deadlines effectively. 
 
 
-**List of Implemented Concept**<br />
-<img width="419" alt="Screenshot 2024-06-04 at 6 02 07 PM" src="https://github.com/TrevorKvanvig/SynapFlow/assets/102114876/dd9b9223-1c74-47fc-a9f8-54af4e425bd1">
-
+**List of Implemented Concept**
 
 
 1.Navigation 
